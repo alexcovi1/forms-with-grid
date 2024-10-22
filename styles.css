@@ -121,23 +121,27 @@ textarea {
 .button-group {
     display: flex;
     justify-content: flex-end;
-    grid-column: 1 / span 2;
+    align-items: flex-end;
+    grid-column: 2;
     margin-top: 20px;
 }
 
 .apply-btn {
     background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 60px;  /* Ridotta la dimensione */
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.9rem;  /* Font size ridotto */
     cursor: pointer;
+    position: relative;
+    right: 0;  /* Allineato a destra */
 }
 
 .apply-btn:hover {
     background-color: #0056b3;
 }
+
 
 @media (max-width: 768px) {
     .grid-container {
